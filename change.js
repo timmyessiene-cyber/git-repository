@@ -51,8 +51,12 @@ git config --global alias.s "status". this means when i type git s it means git 
 
 // git config --global credentials.username "Timie Essiene": this configuration is to tell github that it is US (we who created the file) that are trying to push/fetch code to our github account/repo
 
+<<<<<<< HEAD
 // we push 1 branch of commit at a time, not our ahole commit history. to push data to git: git push {name of link:origin} {main branch:master};
 
 // a short cut for git push is:
 // 1: git push origin master --set-upstream (this sets up a shortcut for git push)
 // after that, the next time we want to git push, we simply type 2. git push and all of our data will be updated/be in sync for this work space of course.
+=======
+// we push 1 branch of commit at a time, not our ahole commit history. to push data to git: git push {name of link:origin} {main branch:master}
+>>>>>>> 295c3fe6c4853016c14dcfd34e5e804c675ff6cc
