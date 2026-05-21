@@ -10,7 +10,7 @@ console.log('Change.js');
 
 // there can be an error massage (fatal) and we are required to run commands adding our name and email. when done, we try to commit the version again
 
-// in case we add changes but we want them to be in the previous commit we: 1. add the change file or folder containing the file (git add). then we commit using the command: git commit m "version 1" --amend. --amend means don't create a new version, just add/update the previous version with these changes
+// in case we add changes but we want them to be in the previous commit we: 1. add the change file or folder containing the file (git add). then we commit using the command: git commit --amend -m "version 1". --amend means don't create a new version, just add/update the previous version with these changes
 
 // the command: git log; helps us see our full version history
 
@@ -51,12 +51,19 @@ git config --global alias.s "status". this means when i type git s it means git 
 
 // git config --global credentials.username "Timie Essiene": this configuration is to tell github that it is US (we who created the file) that are trying to push/fetch code to our github account/repo
 
-<<<<<<< HEAD
 // we push 1 branch of commit at a time, not our ahole commit history. to push data to git: git push {name of link:origin} {main branch:master};
 
 // a short cut for git push is:
 // 1: git push origin master --set-upstream (this sets up a shortcut for git push)
-// after that, the next time we want to git push, we simply type 2. git push and all of our data will be updated/be in sync for this work space of course.
-=======
-// we push 1 branch of commit at a time, not our ahole commit history. to push data to git: git push {name of link:origin} {main branch:master}
->>>>>>> 295c3fe6c4853016c14dcfd34e5e804c675ff6cc
+// after that, the next time we want to git push, we simply type 2. git push and all of our data will be updated/be in sync for this work space of course(link and branch).
+
+// you can save a change locally but you'll still need to make a commit.
+
+// git only pushes commits not changes.
+// the work area contains the changes, when the changes are saved using git add the file/files are sent to staging area. and for changes to go from the staging area to our repository, we have to commit the changes.
+
+// this syncs our githut repo from local repo to remote repo.
+
+// syncing from remote repo to local repo: we do git clone {link of our remote repo https://github.com/timmyessiene-cyber/git-repository.git} {file name: not compulsary but useful}
+
+// now we have 2 local repos, completely separate from each other: let's make some changes
